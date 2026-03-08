@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白光宇 · 模拟 IC / 硅光芯片设计</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="canvas-bg" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <a href="#hero" class="nav-logo">B.G.Y</a>
+    <div class="nav-links">
+      <a href="#about">关于</a>
+      <a href="#edu">教育</a>
+      <a href="#awards">奖项</a>
+      <a href="#work">经历</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </div>
+    <button class="nav-toggle" aria-label="菜单"></button>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <p class="hero-sub">Analog IC · Silicon Photonics</p>
+      <h1 class="hero-name">白光宇<span class="hero-en">Adkins</span></h1>
+      <p class="hero-title">模拟 IC 设计 · 光电混合芯片设计（硅光方向）</p>
+      <div class="hero-contact">
+        <a href="tel:19851622265">📱 198 5162 2265</a>
+        <a href="mailto:Baigy2024@shanghaitech.edu.cn">📧 Baigy2024@shanghaitech.edu.cn</a>
+      </div>
+      <div class="hero-scroll">
+        <span>向下滚动</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+      <h2 class="section-title"><span class="title-num">01</span>关于我</h2>
+      <p class="about-text">
+        微电子与光计算芯片方向，本科中国矿业大学微电子科学与技术，曾任<strong>长江存储</strong>模拟 IC 设计工程师，参与 NAND FLASH 外围电路全流程设计与 Silicon debug；现于<strong>上海科技大学</strong>攻读电子科学与技术（光计算芯片设计）。具备模拟集成电路设计、硅光芯片设计及多款 EDA/仿真工具使用经验，获全国大学生集成电路创新创业大赛<strong>全国特等奖</strong>、省电子设计竞赛一等奖等，并拥有发明专利两项。期望从事模拟 IC 设计或光电混合芯片设计（硅光方向）。
+      </p>
+    </section>
+
+    <!-- 教育经历 -->
+    <section id="edu" class="section education">
+      <h2 class="section-title"><span class="title-num">02</span>教育经历</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024.09 — 2027.06</span>
+            <h3>上海科技大学</h3>
+            <p class="timeline-role">电子科学与技术 · 光计算芯片设计</p>
+            <p class="timeline-desc">研究生在读</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022.07 — 2024.08</span>
+            <h3>长江存储科技有限公司</h3>
+            <p class="timeline-role">模拟 IC 设计工程师 · Memory 外围电路设计</p>
+            <p class="timeline-desc">在职期间参与三代产品全流程，从电路设计到 TO 后 Silicon debug</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2018.09 — 2022.06</span>
+            <h3>中国矿业大学</h3>
+            <p class="timeline-role">微电子科学与技术 · 本科</p>
+            <p class="timeline-desc">核心课程：模拟集成电路设计、导波光学、纳米光子学与器件、半导体物理器件</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 荣誉奖项 -->
+    <section id="awards" class="section awards">
+      <h2 class="section-title"><span class="title-num">03</span>荣誉奖项</h2>
+      <div class="awards-grid">
+        <div class="award-card" data-level="national">
+          <span class="award-year">2025</span>
+          <h3>全国大学生集成电路创新创业大赛</h3>
+          <p>全国特等奖（企业大奖）</p>
+        </div>
+        <div class="award-card" data-level="national">
+          <span class="award-year">2025</span>
+          <h3>张江杯硅光创新创业大赛</h3>
+          <p>总决赛优胜奖</p>
+        </div>
+        <div class="award-card" data-level="international">
+          <span class="award-year">2020</span>
+          <h3>美国大学生数学建模竞赛</h3>
+          <p>国际二等奖</p>
+        </div>
+        <div class="award-card" data-level="provincial">
+          <span class="award-year">2020</span>
+          <h3>江苏省电子设计竞赛</h3>
+          <p>省级一等奖</p>
+        </div>
+        <div class="award-card" data-level="school">
+          <span class="award-year">2019</span>
+          <h3>华为杯程序设计竞赛</h3>
+          <p>校级一等奖</p>
+        </div>
+        <div class="award-card" data-level="school">
+          <span class="award-year">2018-2020</span>
+          <h3>国家励志奖学金 / 校级二等奖学金</h3>
+          <p>多次获奖</p>
+        </div>
+      </div>
+      <div class="patent-note">
+        <strong>工作期间发表发明专利两项：</strong>① 一种改善 Program 电压放电时 HCI 的电路改进方案 ② 提升电路 Stress Time 的新型 X-Decoder 架构
+      </div>
+    </section>
+
+    <!-- 项目与工作经历 -->
+    <section id="work" class="section work">
+      <h2 class="section-title"><span class="title-num">04</span>项目与工作经历</h2>
+      <div class="work-list">
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-date">2025 · 进行中</span>
+            <h3>硅光芯片设计项目</h3>
+          </div>
+          <p class="work-role">全光计算阵列（矩阵乘法 & 卷积加速）</p>
+          <p class="work-desc">负责结构设计与产品流片、验证，目前处于流片准备阶段。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-date">2025</span>
+            <h3>全国大学生集成电路创新创业大赛 · 企业大奖</h3>
+          </div>
+          <p class="work-role">高压高输出电流运算放大器设计</p>
+          <p class="work-desc">历时 6 个月完成运放前端设计：轨到轨输出折叠式共源共栅、摆率增强、Gain boost、限流保护等；采用 NMOS 补偿的轨对轨输入级。基于 SMIC 0.18 μm BCD 工艺，±4V～±30V 宽电源电压，连续输出电流 590mA，对标 TI OPA551。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-date">2022.07 — 2024.08</span>
+            <h3>长江存储科技有限公司</h3>
+          </div>
+          <p class="work-role">IC Design · Analog Circuit Designer</p>
+          <p class="work-desc">负责 NAND FLASH 外围控制电路设计，参与三代产品全流程（电路设计至 TO 后 Silicon debug）。基于每代物理架构完善信号/电源传输通路，设计逻辑电路实现多种算法，Full Chip simulation 与 Silicon debug，并参与 Row decoder、String driver、Array XPATH、Level shifter、OPAMP 等，对接数字验证、工艺良率、CAD 协作等。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-date">2020</span>
+            <h3>江苏省电子设计竞赛 · 省级一等奖</h3>
+          </div>
+          <p class="work-role">E 题 · 放大器非线性失真装置</p>
+          <p class="work-desc">负责信号放大及衰减电路、失真电路设计、功能调试以及 PCB 设计与调试。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-date">2020 — 2022</span>
+            <h3>国家级大学生创新训练项目</h3>
+          </div>
+          <p class="work-role">高频涡流电导率检测仪器开发（项目负责人）</p>
+          <p class="work-desc">设计并制造 100kHz–1MHz 高频涡流电导率测量仪器，负责信号采集电路、OPAMP 及高频信号生成电路设计，带领团队按进度完成项目。本科期间另主持校级大创三项。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section skills">
+      <h2 class="section-title"><span class="title-num">05</span>技能展示</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-name">Verilog HDL</span>
+          <div class="skill-bar"><span class="skill-level" data-width="90"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-name">Cadence Virtuoso / Spectre</span>
+          <div class="skill-bar"><span class="skill-level" data-width="92"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-name">C / C++ / Python</span>
+          <div class="skill-bar"><span class="skill-level" data-width="85"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-name">Comsol / Ansys Lumerical</span>
+          <div class="skill-bar"><span class="skill-level" data-width="80"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-name">模拟集成电路设计</span>
+          <div class="skill-bar"><span class="skill-level" data-width="88"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-name">英语 CET-6</span>
+          <div class="skill-bar"><span class="skill-level" data-width="85"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title"><span class="title-num">06</span>联系我</h2>
+      <p class="contact-intro">期望岗位：模拟 IC 设计（Analog Circuit Design） / 光电混合芯片设计（硅光方向）</p>
+      <div class="contact-btns">
+        <a href="mailto:Baigy2024@shanghaitech.edu.cn" class="btn btn-primary">📧 发送邮件</a>
+        <a href="tel:19851622265" class="btn btn-outline">📱 拨打电话</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 白光宇 · 个人简历</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
